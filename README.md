@@ -21,24 +21,6 @@ You can install the development version of `redditr` directly from GitHub:
 devtools::install_github("your-username/redditr")
 ```
 
-## ⚙️ How it Works
-
-The core functionality of `redditr` relies on a pagination loop to bypass the standard API limits. Here is the data flow:
-
-```mermaid
-graph TD
-    A[User Request: 500 Posts] --> B{Valid Subreddit?}
-    B -- No --> C[Stop & Error]
-    B -- Yes --> D[Request Batch 1 (100 posts)]
-    D --> E[Extract Data & 'after' Token]
-    E --> F{Limit Reached?}
-    F -- No --> G[Request Next Batch using 'after' Token]
-    G --> E
-    F -- Yes --> H[Compile & Clean Data]
-    H --> I[Analyze Sentiment & Frequency]
-    I --> J[Return Tidy Tibble & Plots]
-```
-
 ## Usage Example
 
 Here is a quick example of how to analyze the r/rstats subreddit:
