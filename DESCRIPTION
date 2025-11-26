@@ -1,0 +1,21 @@
+Package: redditr
+Title: A Tool for Scraping and Analyzing Reddit Data
+Version: 0.1.0
+Authors@R: person(given = "Manuel", family = "Salazar Urrego", email = "mannisuso@gmail.com", role = c("aut", "cre"))
+Description: This package provde functions to scrape data from specific subreddits, perforrm text analysis, count
+    word frequencty, and visualize trends and the general sentiment of the content scraped.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports:
+    dplyr,
+    stringr,
+    httr,
+    jsonlite,
+    tidyverse,
+    tidytext,
+    ggplot2
+Suggests: 
+    testthat (>= 3.0.0)
+Video: 
+Config/testthat/edition: 3
