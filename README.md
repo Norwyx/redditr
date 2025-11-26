@@ -37,6 +37,7 @@ graph TD
     F -- Yes --> H[Compile & Clean Data]
     H --> I[Analyze Sentiment & Frequency]
     I --> J[Return Tidy Tibble & Plots]
+```
 
 ## Usage Example
 
