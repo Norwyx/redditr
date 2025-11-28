@@ -18,7 +18,7 @@ You can install the development version of `redditr` directly from GitHub:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("your-username/redditr")
+devtools::install_github("Norwyx/redditr")
 ```
 
 ## Usage Example
